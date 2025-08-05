@@ -26,6 +26,7 @@ Now, let's init the repo!
 To init the repo, run the following (make sure you're in the folder you chose to build this in!)
 
 ```repo init -b branch-name-here --git-lfs --depth=1 -u link-here```
+
 Make sure to replace `branch-name-here` with the branch corresponding to the Android version you intend to build. For example, for crDroid 11 (based on Android 15.0) I would put `15.0` there, or for LineageOS 22.1, for example, I would put `lineage-22.1`. You also have to replace link-here with the link to the git repository you're using for this. It will *always* end with .git, and is usually a repository named `android` inside of the organization. Here, I used `https://github.com/crdroidandroid/android.git` (for crDroid), and while it's pretty similar for Lineage, it can depend a lot.
 An example of the command - this initializes repo and makes it know that this is where we'll be downloading from, essentially:
 
