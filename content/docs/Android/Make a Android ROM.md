@@ -13,9 +13,7 @@ After this is installed, you should have everything you need.
 
 You'll need repo for this, so run these:
 
-```mkdir ~/bin```
-
-```PATH=~/bin:$PATH```
+```mkdir ~/bin && PATH=~/bin:$PATH```
 
 **Sidenote: ```PATH=~/bin:$PATH``` will need to be ran each reboot on your build machine in order for repo to be recognized.**
 
