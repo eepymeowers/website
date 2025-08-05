@@ -47,7 +47,7 @@ Android 12L and earlier:
 ```brunch lineage_[devicecodename]-userdebug```
 Android 13:
 ```lunch lineage_[devicecodename]-userdebug && m bacon```
-Android 14:
+Android 14 and later:
 ```brunch [devicecodename]``` OR ```lunch lineage_[devicecodename]-userdebug && m bacon```. Either works.
 
 Some phones, such as my Xperia XZ2 Premium, will fail the build without allowing missing dependencies. In those edge cases, you should use ```export ALLOW_MISSING_DEPENDENCIES=true``` to fix it. The build should complete without issue.
