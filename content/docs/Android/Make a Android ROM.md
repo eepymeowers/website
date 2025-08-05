@@ -15,8 +15,7 @@ You'll need repo for this, so run these:
 ```PATH=~/bin:$PATH``` **Sidenote: ```PATH=~/bin:$PATH``` will need to be ran each reboot on your build machine in order for repo to be recognized.**
 
 The following doesn't need to be ran each reboot.
-```curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo```
-```chmod a+x ~/bin/repo```
+```curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo```
 
 ## Initialize the repo and download the code
 Now, let's init the repo!
@@ -47,11 +46,9 @@ Here's what to run for each version (you don't need them all!):
 Android 12L and earlier:
 ```brunch lineage_[devicecodename]-userdebug```
 Android 13:
-```lunch lineage_[devicecodename]-userdebug```
-```m bacon```
+```lunch lineage_[devicecodename]-userdebug && m bacon```
 Android 14:
-```brunch [devicecodename]``` OR ```lunch lineage_[devicecodename]-userdebug```
-```m bacon```. Either works.
+```brunch [devicecodename]``` OR ```lunch lineage_[devicecodename]-userdebug && m bacon```. Either works.
 
 Some phones, such as my Xperia XZ2 Premium, will fail the build without allowing missing dependencies. In those edge cases, you should use ```export ALLOW_MISSING_DEPENDENCIES=true``` to fix it. The build should complete without issue.
 
